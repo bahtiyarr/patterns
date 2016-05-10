@@ -1,0 +1,10 @@
+{
+    "name": "bahtiyar/patterns",
+    "authors": [
+        {
+            "name": "bahtiyar",
+            "email": "bahtiyar.kavakli@persgroep.nl"
+        }
+    ],
+    "require": {}
+}
