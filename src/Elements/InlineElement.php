@@ -4,11 +4,22 @@ namespace Elements;
 
 abstract class InlineElement extends FlexElement
 {
-    public function __construct($data)
+    /**
+     * @var FlexElement[]
+     */
+    private $elements;
+
+    /**
+     * InlineElement constructor.
+     * @param FlexElement[] $elements
+     */
+    public function __construct(array $elements)
     {
+        $this->elements = $elements;
     }
 
-    protected function __toString()
+    public function __toString()
     {
+        return ' ' . join(' ', $this->elements);
     }
 }

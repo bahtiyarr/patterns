@@ -6,13 +6,8 @@ use Elements\BlockElement;
 
 class H1 extends BlockElement
 {
-    public function __construct($data)
+    public function __toString()
     {
-        parent::__construct($data);
-    }
-
-    protected function __toString()
-    {
-        return get_class(__CLASS__);
+        return '<h1>' . parent::__toString() . '</h1>';
     }
 }
